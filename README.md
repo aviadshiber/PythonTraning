@@ -5,7 +5,7 @@ I will try to examin some of the power in the python language and how it can be 
 
 ## Polynom
 <p>
- the module will represent a Polynom simple operations like add,multiply and compose of other polynoms in time complexity of O(1), then it will be possible to evaluate the polynom in time complexity of O(n). 
+ the module will represent a Polynom with simple operations like add,multiply and compose of other polynoms in time complexity of O(1), then it will be possible to evaluate the polynom in time complexity of O(n). 
     all this will be fairly easy and possible using lambda expressions & closures features in python :).
  </p>
 
