@@ -1,9 +1,13 @@
 # PythonTraning
-his repo is my first repo, which will examine some short program with perhaps big power.
+this repo is my first repo.
+in the following repo I will examine some small programs I wrote in Python. 
+I will try to examin some of the power in the python language and how it can be applied in the real world.
 
 ## Polynom
+<p>
  the module will represent a Polynom simple operations like add,multiply and compose of other polynoms in time complexity of O(1), then it will be possible to evaluate the polynom in time complexity of O(n). 
     all this will be fairly easy and possible using lambda expressions & closures features in python :).
+ </p>
 
 ### example of usage: </br>
  p1= Polynom()</br>
