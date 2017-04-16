@@ -7,60 +7,65 @@ class Polynom(object):
         self.block = (lambda x: 0)
 
     def get_block(self):
-        '''
+        """
         the method will return the representation of the polynom as a function
         :return: a polynom as a function
-        '''
+        """
         return self.block
 
     def add(self, other_block):
-        '''
+        """
         the method will add another polynom block to this polynom
         Time complexity O(1) Space complexity: O(1)
         :param other_block: the block of the other polynom
         :return: self polynom
-        '''
+        """
         current = self.block
         self.block = (lambda x: current(x) + other_block(x))
         return self
 
     def add_monom(self, coef, exp):
-        '''
+        """
         the method will add a monom to the this polynom
         Time complexity O(1) Space complexity: O(1)
         :param coef: the coef of x
         :param exp: the exp of x
         :return: this object
-        '''
+        """
         monom = (lambda x: coef * (x ** exp))
         current = self.block
         self.block = lambda x: current(x) + monom(x)
         return self
 
     def multiply(self, other_block):
-        '''
+        """
         the method will multiply this polynom with other polynom block.
         Time complexity O(1) Space complexity: O(1)
         :param other_block: the block of the other polynom
         :return: this polynom after multiplication
-        '''
+        """
         current = self.block
         self.block = lambda x: (current(x)) * (other_block(x))
         return self
 
     def compose(self, other_block):
-        '''
+        """
         the method wil compose this polynom with other polynom block.
         for example if the polynom is now p(x) then after composing it will be p(g(x)).
         Time complexity O(1) Space complexity: O(1)
         :param other_block: the block of the other polynom
         :return: this polynom after composition
-        '''
+        """
         current = self.block
         self.block = lambda x: current(other_block(x))
         return self
 
     def eval(self,x):
+        """
+        the method evaluates the polynom with value of x.
+        :param x: the value to evaluate the Polynom with. 
+        :return: the result of the evaluation.
+        """
         return self.block(x)
 
 
