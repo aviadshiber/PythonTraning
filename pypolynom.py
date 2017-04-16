@@ -63,6 +63,7 @@ class Polynom(object):
     def eval(self,x):
         """
         the method evaluates the polynom with value of x.
+        Time complexity O(n) Space complexity O(1)
         :param x: the value to evaluate the Polynom with. 
         :return: the result of the evaluation.
         """
