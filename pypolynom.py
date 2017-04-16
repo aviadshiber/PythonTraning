@@ -1,8 +1,8 @@
 class Polynom(object):
-    '''
-    the module will represent a Polynom simple operations like add,multiply and compose of other polynoms in time complexity of O(1), then it will be possible to evaluate the polynom in time complexity of O(n). 
+    """
+    the module will represent a Polynom with simple operations like add,multiply and compose of other polynoms in time complexity of O(1), then it will be possible to evaluate the polynom in time complexity of O(n). 
     all this will be fairly easy and possible using lambda expressions & closures features in python :).
-    '''
+    """
     def __init__(self):
         self.block = (lambda x: 0)
 
@@ -24,7 +24,7 @@ class Polynom(object):
         self.block = (lambda x: current(x) + other_block(x))
         return self
 
-    def add_monom(self, coef, exp):
+    def add_monom(self, coef , exp):
         """
         the method will add a monom to the this polynom
         Time complexity O(1) Space complexity: O(1)
