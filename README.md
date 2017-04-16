@@ -1,6 +1,7 @@
 # PythonTraning
 this repo is my first repo.
-in the following repo I will examine some small programs I write in Python. I will try to examin some power of the language. 
+in the following repo I will examine some small programs I wrote in Python. 
+I will try to examin some powerf of the language and how it can be applied in the real world.
 
 ## Polynom
 <p>
